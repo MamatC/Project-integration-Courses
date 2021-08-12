@@ -1,0 +1,151 @@
+// mise en forme titre + paragraphe section 1 avant les cards
+main section div .h2{
+            font-size: 2em;
+            font-weight: lighter;
+            color: $black-text;
+            text-align: center;
+            margin: 50px 0 10px 0;
+        }
+main section div .p{
+        font-weight: lighter;
+        color: $black-text;
+        text-align: center;
+        margin-left: 30%;
+        margin-right: 30%;
+    }
+    
+    
+// CREATION CARD VERTE
+
+// declaration d'un 2eme container pour les cards
+.container2{
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+
+// mise en forme d'une card
+.card-green {
+     background-color: $green-card1;
+    display: inline;
+    text-align: center;
+    padding: 40px 50px;
+    border-radius: 10px;
+    margin: 30px 0 70px 0;
+    width: 22%;
+
+        h2{
+        color: $white;
+        font-weight: normal;
+        }
+        p{
+            color: $white;
+            font-size: 1.2em;
+            padding-bottom: 20px;
+        }
+        a{
+            text-decoration: none;
+            color: black;
+            text-transform: uppercase;
+            font-weight: bold;
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: $white;
+            border-radius: 5px;
+            transition: 500ms;
+            letter-spacing: 3px;
+            font-size: 1.2em;
+        }
+        a:hover{
+            background-color: $gray-light;
+            transition: 500ms;
+        }
+    }
+.card-green:hover{
+     background-color: $green-card;
+}
+
+// CREATION CARD BLUE
+.card-blue{
+    @extend .card-green;
+    background-color: $blue-card1;
+}
+.card-blue:hover{
+     background-color: $blue-card;
+}
+
+
+// SECTION PETITES CARDS
+
+.bgcolor{
+    background-color: $gray-light;
+    border-top: 1px solid lightgray;
+}
+
+// creation d'une grille pour mettre les 6 cards
+.card-courses{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    text-align: center;
+    margin-top: 50px;
+    gap: 10px;
+}
+
+// mise en forme d'un petite card
+main section .card-courses {
+        img{
+        width: 10%;
+        background-color: $green-card1;
+        border: 2px solid $gray-light;
+        border-radius: 50%;
+        padding: 40px;
+    }   
+    h3{
+        color: $black-text;
+        font-weight: normal;
+        font-size: 1.5em;
+        margin-bottom: 0;
+        letter-spacing: 2px;
+    }
+    p{
+        color: $black-text;
+        margin-top: 5px;
+        padding-bottom: 50px;
+        
+    }
+    // changement de bgcolor pour chaques petites cards
+    .icon-red{
+        background-color: $red-icon;
+    }
+    .icon-blue{
+        background-color: $blue-icon;
+    }
+    .icon-orange{
+        background-color: $orange-icon;
+    }
+    .icon-purple{
+        background-color: $purple-icon;
+    }
+    .icon-green2{
+        background-color: $green-icon1;
+    }
+}
+
+// SECTION TEMOIGNAGES
+
+.temoignages{
+    background-color: $green-police;
+    color: $white;
+    text-align: center;
+    padding: 30px 0;
+
+        h2{
+            font-size: 2em;
+            font-weight: normal;
+        }
+        img{
+            width: 10%;
+            border-radius: 50%;
+            border: 2px solid $black-text;
+        }
+}
