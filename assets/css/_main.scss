@@ -93,13 +93,20 @@ main section div .p{
 
 // mise en forme d'un petite card
 main section .card-courses {
-        img{
-        width: 10%;
-        background-color: $green-card1;
-        border: 2px solid $gray-light;
-        border-radius: 50%;
-        padding: 40px;
-    }   
+    .icons {
+        margin: auto;
+        border-radius: 50% ;
+        height: 100px;
+        width: 100px;
+        
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+       img{
+            width: 25px;
+        }  
+    } 
     h3{
         color: $black-text;
         font-weight: normal;
@@ -114,6 +121,9 @@ main section .card-courses {
         
     }
     // changement de bgcolor pour chaques petites cards
+    .icon-green{
+        background-color: $green-card1;
+    }
     .icon-red{
         background-color: $red-icon;
     }

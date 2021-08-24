@@ -47,6 +47,7 @@ header div a:hover {
 }
 header div img {
   width: 30px;
+  margin: auto;
 }
 header div ul {
   padding-left: 0;
@@ -192,12 +193,17 @@ main section div .p {
   gap: 10px;
 }
 
-main section .card-courses img {
-  width: 10%;
-  background-color: #2ecc71;
-  border: 2px solid #FAFAFA;
+main section .card-courses .icons {
+  margin: auto;
   border-radius: 50%;
-  padding: 40px;
+  height: 100px;
+  width: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+main section .card-courses .icons img {
+  width: 25px;
 }
 main section .card-courses h3 {
   color: #444;
@@ -210,6 +216,9 @@ main section .card-courses p {
   color: #444;
   margin-top: 5px;
   padding-bottom: 50px;
+}
+main section .card-courses .icon-green {
+  background-color: #2ecc71;
 }
 main section .card-courses .icon-red {
   background-color: #e74c3c;

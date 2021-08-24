@@ -14,15 +14,17 @@ header{
             list-style: none;
             text-transform: uppercase;
             transition: 500ms;
-        }
-        a:hover{
-            color: $green-police;
-            transition: 500ms;
+
+            &:hover{
+                color: $green-police;
+                transition: 500ms;
+            }
         }
 
         // taille du logo de la marque
         img{
             width:30px;
+            margin: auto;
         }
         ul{
             padding-left: 0;
